@@ -21,7 +21,7 @@
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#Navbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <a class="navbar-brand" href="#">Intellicial AI</a>
+            <a class="navbar-brand mr-auto" href="#"><img src="img/logo.png" width="45px" alt="logo"/></a>
             <div class="collapse navbar-collapse" id="Navbar">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item active"><a class="nav-link" href="#"><span class="fa fa-home fa-lg"></span>Home</a></li>
@@ -36,11 +36,13 @@
         <div class="container">
             <div class="row row-header">
                 <div class="col-12 col-sm-6">
+                    
                     <h1>Intelicial AI</h1>
                     <p>Our work to create safe and beneficial AI requires a deep understanding of the potential risks
                         and benefits, as well as careful consideration of the impact.</p>
                 </div>
-                <div class="col-12 col-sm">
+                <div class="col-12 col-sm align-self-center">
+                    <img src="img/logo.png" width="120px" alt="logo"/>
                 </div>
             </div>
         </div>
@@ -53,43 +55,110 @@
 
     <div class="container">
         <div class="row row-content align-items-center">
-            <div class="col-12 col-sm-4">
+            <div class="col-12 col-sm-4 order-last">
                 <h3>Our Advanced AI Implementations</h3>
             </div>
             <div class="col-12 col-sm-8">
-                <h2>Autonomous Car</h2>
-                <p>It is a vehicle(car) capable of sensing its environment and operating without human involvement. A
+                <div class="media d-flex">
+                    <img class="img-thumbnail" src="img/autonomous_car.png" alt="Autonomous Car" width="150px"/>
+                    <div class="media-body align-self-center px-3">
+                        <h2 class="mt-0">Autonomous Car<span class="badge bg-danger">NEW</span><span class="badge rounded-pill bg-secondary">$4.99</span></h2>
+                <p class="d-none d-sm-block">It is a vehicle(car) capable of sensing its environment and operating without human involvement. A
                     human passenger is not required to take control of the vehicle at any time, nor is a human passenger
                     required to be present in the vehicle at all.</p>
+                    </div>
+                </div>
             </div>
         </div>
-
-
         <div class="row row-content align-items-center">
             <div class="col-12 col-sm-4">
                 <h3>Our Ongoing Research Projects</h3>
             </div>
             <div class="col-12 col-sm-8">
-                <h2>Open Humanoid</h2>
-                <p>A chat bot which is capable of talking like humans and taking smart decisions based on different
-                    situations. Can performs actions like human. </p>
-            </div>
-        </div>
+                <div class="media d-flex">
+                    
+                    <div class="media-body align-self-center px-3">
 
+                        <h2 class="mt-0">Open Humanoid<span class="badge bg-danger">HOT</span></h2>
+                        <p class="d-none d-sm-block">A chat bot which is capable of talking like humans and taking smart decisions based on different
+                            situations. Can performs actions like human.</p>
+                    </div>
+                    <img class="img-thumbnail" src="img/humanoid.png" alt="humanoid" width="120px"/>
+                </div>
+             </div>
+            </div>
         <div class="row row-content align-items-center">
-            <div class="col-12 col-sm-4 ">
+            <div class="col-12 col-sm-4 order-last">
                 <h3>Meet our Developers</h3>
             </div>
             <div class="col-12 col-sm-8">
-                <h2>John Henlry</h2>
-                <h4>Executive Project Manager</h4>
-                <p>Eleven years experience including management of complex technical projects, customer advocacy, team
-                    building and engineering. Worked across company divisions and geographies to deliver quality
-                    products to a world-wide market.</p>
+                <div class="media d-flex">
+                    <img class="img-thumbnail" src="img/henlry.png" width="100px" alt="Jhon henlry"/>
+                    <div class="media-body align-self-center px-3">
+                        <h2 class="mt-0">John Henlry</h2>
+                        <h4>Executive Project Manager</h4>
+                        <p class="d-none d-sm-block">Eleven years experience including management of complex technical projects, customer advocacy, team
+                            building and engineering. Worked across company divisions and geographies to deliver quality
+                            products to a world-wide market.</p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-
+    <div class="container" id="reserve">
+        <div class="row row-header">
+            <div class="row-content col-12 col-md-8 offset-md-2">
+                <div class="card">
+                    <h3 class="card-header bg-warning text-white"><strong>Reserve a Project</strong></h3>
+                    <form>
+                        <div class="row form-group row-header py-3">
+                            <label for="date" class="col-md-3 col-12 col-form-label">Number 0f Member</label>
+                            <div class="col-12 col-md-8">
+                                <label>
+                                    <input name="group3" type="radio" checked/>
+                                    <span>1</span>
+                                </label>
+                                <label>
+                                    <input class="with-gap" name="group3" type="radio" checked/>
+                                    <span>2</span>
+                                </label>
+                              <label>
+                                <input class="with-gap" name="group3" type="radio" checked/>
+                                <span>3</span>
+                              </label>
+                              <label>
+                                <input class="with-gap" name="group3" type="radio" checked/>
+                                <span>4</span>
+                              </label>
+                              <label>
+                                <input class="with-gap" name="group3" type="radio" checkde/>
+                                <span>5</span>
+                              </label>
+                              <label>
+                                <input class="with-gap" name="group3" type="radio" checked/>
+                                <span>6</span>
+                              </label>
+                            </div>
+                        </div>
+                        <div class="row form-group row-header pb-3">
+                            <label for="date" class="col-md-3 col-12 col-form-label">Date and Time</label>
+                            <div class="col-12 col-md-4">
+                                <input type="text" class="form-control" id="date" name="date" placeholder="Date">
+                            </div>
+                            <div class="col-12 col-md-3">
+                                <input type="text" class="form-control" id="Time" name="Time" placeholder="Time">
+                            </div>
+                        </div>
+                        <div class="form-goup row row-header pb-3">
+                            <div class="col-12 offset-md-3 col-md-9">
+                                <button type="reserve" class="btn btn-primary">Reserve</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
     <footer class="footer">
         <div class="container">
             <div class="row justify-content-center">
