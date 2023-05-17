@@ -21,28 +21,80 @@
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#Navbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <a class="navbar-brand mr-auto" href="#"><img src="img/logo.png" width="45px" alt="logo"/></a>
+            <a class="navbar-brand mr-auto" href="#"><img src="img/logo.png" width="45px" alt="logo" /></a>
             <div class="collapse navbar-collapse" id="Navbar">
                 <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active"><a class="nav-link" href="#"><span class="fa fa-home fa-lg"></span>Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="./aboutus.html"><span class="fa fa-info fa-lg"></span>About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#"><span class="fa fa-list fa-lg"></span>Projects</a></li>
-                    <li class="nav-item"><a class="nav-link" href="./contactus.html"><span class="fa fa-address-card fa-lg"></span>Contact</a></li>
+                    <li class="nav-item active"><a class="nav-link" href="#"><span
+                                class="fa fa-home fa-lg"></span>Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./aboutus.html"><span
+                                class="fa fa-info fa-lg"></span>About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#"><span class="fa fa-list fa-lg"></span>Projects</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="./contactus.html"><span
+                                class="fa fa-address-card fa-lg"></span>Contact</a></li>
                 </ul>
+                <span class="navbar-text">
+                    <a data-bs-toggle="modal" data-bs-target="#loginModal"><span class="fa fa-sign-in"></span>Login</a>
+                </span>
             </div>
         </div>
     </nav>
+    <div id="loginModal" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-lg" role="content">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Login</h4>
+                    <button type="button" class="close" data-bs-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-now">
+                            <div class="form-group col-sm-4">
+                                <label class="sr-only" for="inputEmail">Email address</label>
+                                <input type="email" class="form-control form-control-sm mr-1" id="inputEmail"
+                                    placeholder="Enter email">
+                            </div>
+                            <div class="form-group col-sm-4">
+                                <label class="sr-only" for="inputpassword">Password</label>
+                                <input type="password" class="form-control form-control-sm mr-1" id="inputpassword"
+                                    placeholder="Password">
+                            </div>
+                            <div class="col-sm-auto">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox">
+                                    <label class="form-check-label">Remember me</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <button type="button" class="btn btn-secondary btn-sm ml-auto"
+                                data-bs-dismiss="modal">Cancel</button>
+                            <button type="Submit" class="btn btn-primary btn-sm ml-1">Sign in</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
     <header class="jumbotron">
         <div class="container">
             <div class="row row-header">
                 <div class="col-12 col-sm-6">
-                    
+
                     <h1>Intelicial AI</h1>
                     <p>Our work to create safe and beneficial AI requires a deep understanding of the potential risks
                         and benefits, as well as careful consideration of the impact.</p>
                 </div>
                 <div class="col-12 col-sm align-self-center">
-                    <img src="img/logo.png" width="120px" alt="logo"/>
+                    <img src="img/logo.png" width="120px" alt="logo" />
+                </div>
+                <div class="col-12 col-sm-3 align-self-center p-3">
+                    <div class="d-grid gap-2">
+                        <a role="button" href="#reserve" class="btn btn-sm btn-warning" type="button"
+                            data-bs-toggle="tooltip" data-bs-placement="top" data-bs-html="true"
+                            title="call us at <br> <strong>+331234567890</strong>">Reserve a Project</a>
+                    </div>
+
                 </div>
             </div>
         </div>
@@ -60,12 +112,15 @@
             </div>
             <div class="col-12 col-sm-8">
                 <div class="media d-flex">
-                    <img class="img-thumbnail" src="img/autonomous_car.png" alt="Autonomous Car" width="150px"/>
+                    <img class="img-thumbnail" src="img/autonomous_car.png" alt="Autonomous Car" width="150px" />
                     <div class="media-body align-self-center px-3">
-                        <h2 class="mt-0">Autonomous Car<span class="badge bg-danger">NEW</span><span class="badge rounded-pill bg-secondary">$4.99</span></h2>
-                <p class="d-none d-sm-block">It is a vehicle(car) capable of sensing its environment and operating without human involvement. A
-                    human passenger is not required to take control of the vehicle at any time, nor is a human passenger
-                    required to be present in the vehicle at all.</p>
+                        <h2 class="mt-0">Autonomous Car<span class="badge bg-danger">NEW</span><span
+                                class="badge rounded-pill bg-secondary">$4.99</span></h2>
+                        <p class="d-none d-sm-block">It is a vehicle(car) capable of sensing its environment and
+                            operating without human involvement. A
+                            human passenger is not required to take control of the vehicle at any time, nor is a human
+                            passenger
+                            required to be present in the vehicle at all.</p>
                     </div>
                 </div>
             </div>
@@ -76,28 +131,30 @@
             </div>
             <div class="col-12 col-sm-8">
                 <div class="media d-flex">
-                    
+
                     <div class="media-body align-self-center px-3">
 
                         <h2 class="mt-0">Open Humanoid<span class="badge bg-danger">HOT</span></h2>
-                        <p class="d-none d-sm-block">A chat bot which is capable of talking like humans and taking smart decisions based on different
+                        <p class="d-none d-sm-block">A chat bot which is capable of talking like humans and taking smart
+                            decisions based on different
                             situations. Can performs actions like human.</p>
                     </div>
-                    <img class="img-thumbnail" src="img/humanoid.png" alt="humanoid" width="120px"/>
+                    <img class="img-thumbnail" src="img/humanoid.png" alt="humanoid" width="120px" />
                 </div>
-             </div>
             </div>
+        </div>
         <div class="row row-content align-items-center">
             <div class="col-12 col-sm-4 order-last">
                 <h3>Meet our Developers</h3>
             </div>
             <div class="col-12 col-sm-8">
                 <div class="media d-flex">
-                    <img class="img-thumbnail" src="img/henlry.png" width="100px" alt="Jhon henlry"/>
+                    <img class="img-thumbnail" src="img/henlry.png" width="100px" alt="Jhon henlry" />
                     <div class="media-body align-self-center px-3">
                         <h2 class="mt-0">John Henlry</h2>
                         <h4>Executive Project Manager</h4>
-                        <p class="d-none d-sm-block">Eleven years experience including management of complex technical projects, customer advocacy, team
+                        <p class="d-none d-sm-block">Eleven years experience including management of complex technical
+                            projects, customer advocacy, team
                             building and engineering. Worked across company divisions and geographies to deliver quality
                             products to a world-wide market.</p>
                     </div>
@@ -115,29 +172,29 @@
                             <label for="date" class="col-md-3 col-12 col-form-label">Number 0f Member</label>
                             <div class="col-12 col-md-8">
                                 <label>
-                                    <input name="group3" type="radio" checked/>
+                                    <input name="group3" type="radio" checked />
                                     <span>1</span>
                                 </label>
                                 <label>
-                                    <input class="with-gap" name="group3" type="radio" checked/>
+                                    <input class="with-gap" name="group3" type="radio" checked />
                                     <span>2</span>
                                 </label>
-                              <label>
-                                <input class="with-gap" name="group3" type="radio" checked/>
-                                <span>3</span>
-                              </label>
-                              <label>
-                                <input class="with-gap" name="group3" type="radio" checked/>
-                                <span>4</span>
-                              </label>
-                              <label>
-                                <input class="with-gap" name="group3" type="radio" checkde/>
-                                <span>5</span>
-                              </label>
-                              <label>
-                                <input class="with-gap" name="group3" type="radio" checked/>
-                                <span>6</span>
-                              </label>
+                                <label>
+                                    <input class="with-gap" name="group3" type="radio" checked />
+                                    <span>3</span>
+                                </label>
+                                <label>
+                                    <input class="with-gap" name="group3" type="radio" checked />
+                                    <span>4</span>
+                                </label>
+                                <label>
+                                    <input class="with-gap" name="group3" type="radio" checkde />
+                                    <span>5</span>
+                                </label>
+                                <label>
+                                    <input class="with-gap" name="group3" type="radio" checked />
+                                    <span>6</span>
+                                </label>
                             </div>
                         </div>
                         <div class="row form-group row-header pb-3">
@@ -179,16 +236,22 @@
                         France<br>
                         <i class="fa fa-phone fa-lg"></i>: +33 1234 5678 20<br>
                         <i class="fa fa-fax fa-lg"></i>: +33 8765 4321 20<br>
-                        <i class="fa fa-envelope fa-lg"></i>: <a href="mailto:info@intelicial.net">info@intelicial.net</a>
+                        <i class="fa fa-envelope fa-lg"></i>: <a
+                            href="mailto:info@intelicial.net">info@intelicial.net</a>
                     </address>
                 </div>
                 <div class="col-12 col-sm-4 align-self-center">
                     <div>
-                        <a class="btn btn-social-icon btn-google"href="http://google.com/+"><i class="fa fa-google-plus"></i></a>
-                        <a class="btn btn-social-icon btn-facebook" href="http://www.facebook.com/profile.php?id="><i class="fa fa-facebook"></i></a>
-                        <a class="btn btn-social-icon btn-linkedin"href="http://www.linkedin.com/in/"><i class="fa fa-linkedin"></i></a>
-                        <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fa fa-twitter"></i></a>
-                        <a class="btn btn-social-icon btn-youtube" href="http://youtube.com/"><i class="fa fa-youtube"></i></a>
+                        <a class="btn btn-social-icon btn-google" href="http://google.com/+"><i
+                                class="fa fa-google-plus"></i></a>
+                        <a class="btn btn-social-icon btn-facebook" href="http://www.facebook.com/profile.php?id="><i
+                                class="fa fa-facebook"></i></a>
+                        <a class="btn btn-social-icon btn-linkedin" href="http://www.linkedin.com/in/"><i
+                                class="fa fa-linkedin"></i></a>
+                        <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i
+                                class="fa fa-twitter"></i></a>
+                        <a class="btn btn-social-icon btn-youtube" href="http://youtube.com/"><i
+                                class="fa fa-youtube"></i></a>
                         <a class="btn btn-social-icon btn-mailto" href="mailto:"><i class="fa fa-mail-o"></i></a>
                     </div>
                 </div>
@@ -203,6 +266,12 @@
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('[data-bs-toggle="tooltip"]').tooltip();
+        });
+
+    </script>
 </body>
 
 </html>
