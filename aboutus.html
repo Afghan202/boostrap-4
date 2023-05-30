@@ -31,9 +31,52 @@
                     <li class="nav-item"><a class="nav-link" href="./contactus.html"><span
                                 class="fa fa-address-card fa-lg"></span>Contact</a></li>
                 </ul>
+                <span class="navbar-text">
+                    <a data-bs-toggle="modal" data-bs-target="#loginModal"><span class="fa fa-sign-in"></span>Login</a>
+                </span>
             </div>
         </div>
     </nav>
+    <div id="loginModal" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-lg" role="content">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Login</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-row">
+                            <div class="row">
+                                <div class="col">
+                                    <label class="sr-only" for="inputemail">Email address</label>
+                                    <input type="email" class="form-control 
+                                    form-control-sm mr-1" id="Email Address" placeholder="Enter email">
+                                </div>
+                                <div class="col">
+                                    <label class="sr-only" for="inputpass">Password</label>
+                                    <input type="password" class="form-control 
+                                    form-control-sm mr-1" id="Password" placeholder=" Enter Password">
+                                </div>
+                            </div>
+                            <div class="col-sm-auto">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox">
+                                    <label class="form-check-label">Remember me</label>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="form-row">
+                            <button type="button" class="btn btn-secondary btn-sm ml-auto"
+                                data-bs-dismiss="modal">Cancel</button>
+                            <button type="submit" class="btn btn-primary btn-sm ml-1">Sign in</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <header class="jumbotron">
         <div class="container">
@@ -47,8 +90,15 @@
                     <img src="img/logo.png" width="120px" alt="logo" />
 
                 </div>
+                <div class="col-12 col-sm-3 align-self-center p-3">
+                    <div class="d-grid gap-2">
+
+                        <a role="button" class="btn btn-sm btn-warning" type="button" data-bs-toggle="modal"
+                            data-bs-target="#reserveModal">Reserve a Project</a>
+
+                    </div>
+                </div>
             </div>
-        </div>
     </header>
 
 
@@ -99,8 +149,21 @@
             </div>
         </div>
 
-
         <div class="row row-content">
+            <div class="row">
+                <div class="col-12">
+                    <div class="card card-body bg-light">
+                        <blockquote class="blockquote">
+                            <p class="mb-2">A year spent in artificial intelligence is
+                                enough to make one believe in God.</p>
+                            <footer class="blockquote-footer">
+                                Aalok Kumar, <cite title="Source Title">Chief Executing
+                                    Officer, WHPL, India, 2022</cite>
+                            </footer>
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
             <div class="col-12">
 
                 <h2>Corporate Leadership</h2>
@@ -145,170 +208,244 @@
                             <h3 class="mb-0"><button class="accordion-button" data-bs-toggle="collapse"
                                     data-bs-target="#Aalok">Aalok Kumar <small>Chief Executive Officer</small></button>
                             </h3>
-                            <div class="accordion-collapse collapsed" id="Aalok" data-bs-parent="#accordion">
+                            <div class="accordion-collapse collapse" id="Aalok" data-bs-parent="#accordion">
                                 <div class="accordion-body">
-                            <p class="d-none d-sm-block">A Visionary with a positive attitude and global executive management experience in
-                                strategy,
-                                finance,
-                                marketing, business development, business consulting, sales and account management,
-                                product
-                                management, solutions delivery and regional business operations. Broad range of business
-                                and
-                                management expertise, leadership experience, technical knowledge, program management and
-                                people
-                                management experience coupled with excellent interpersonal and communication skills.
-                            </p>
-                            </div>
-                            </div>
+                                    <p class="d-none d-sm-block">A Visionary with a positive attitude and global
+                                        executive management experience in
+                                        strategy,
+                                        finance,
+                                        marketing, business development, business consulting, sales and account
+                                        management,
+                                        product
+                                        management, solutions delivery and regional business operations. Broad range of
+                                        business
+                                        and
+                                        management expertise, leadership experience, technical knowledge, program
+                                        management and
+                                        people
+                                        management experience coupled with excellent interpersonal and communication
+                                        skills.
+                                    </p>
+                                </div>
                             </div>
                         </div>
-                    <div class="accordion-item">
-                    <div class="accordion-header" role="tab" id="Jessicahead">
-                        <h3 class="mb-0"><button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#Jessica">Jessica Agolii <small>Sales and Marketing Expert</small></button></h3>
-                        <div class="accordion-collapse collapsed" id="Jessica" data-bs-parent="#accordion">
-                            <div class="accordion-body">
-                        <p class="d-none d-sm-block">A proven track record of success across B2C, B2B, and SaaS industries. By understanding the
-                            digital
-                            landscape and using the latest paid advertising strategies and tools, she is able to create
-                            customized campaigns for you. Led generation campaigns that drive high-quality leads are
-                            what she do
-                            best.</p>
-                            </div>
-                            </div>
-                    </div>
                     </div>
                     <div class="accordion-item">
-                    <div class="accordion-header" role="tab" id="Abhishekhead">
-                        <h3 class="mb-0"><button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#Abhishek">Abhishek Kumar <small>Executive Director</small></button></h3>
-                        <div class="accordion-collapse collapsed" id="Abhishek" data-bs-parent="#accordion">
-                        <div class="accordion-body">
-                        <p class="d-none d-sm-block">His experience includes Marketing, Sales, Pre-Sales, Consumption and Operations for all the
-                            WHPL
-                            services (Modern Workplace, Security, Surface, Business Applications, Intellicial AI) for
-                            this
-                            segment.</p>
-                        <p>In the 9 years Abhishek has been with other MNCs, he catapulted every business he led to
-                            great levels
-                            of success.</p>
+                        <div class="accordion-header" role="tab" id="Jessicahead">
+                            <h3 class="mb-0"><button class="accordion-button" data-bs-toggle="collapse"
+                                    data-bs-target="#Jessica">Jessica Agolii <small>Sales and Marketing
+                                        Expert</small></button></h3>
+                            <div class="accordion-collapse collapse" id="Jessica" data-bs-parent="#accordion">
+                                <div class="accordion-body">
+                                    <p class="d-none d-sm-block">A proven track record of success across B2C, B2B, and
+                                        SaaS industries. By understanding the
+                                        digital
+                                        landscape and using the latest paid advertising strategies and tools, she is
+                                        able to create
+                                        customized campaigns for you. Led generation campaigns that drive high-quality
+                                        leads are
+                                        what she do
+                                        best.</p>
+                                </div>
                             </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <div class="accordion-header" role="tab" id="Abhishekhead">
+                            <h3 class="mb-0"><button class="accordion-button" data-bs-toggle="collapse"
+                                    data-bs-target="#Abhishek">Abhishek Kumar <small>Executive Director</small></button>
+                            </h3>
+                            <div class="accordion-collapse collapse" id="Abhishek" data-bs-parent="#accordion">
+                                <div class="accordion-body">
+                                    <p class="d-none d-sm-block">His experience includes Marketing, Sales, Pre-Sales,
+                                        Consumption and Operations for all the
+                                        WHPL
+                                        services (Modern Workplace, Security, Surface, Business Applications,
+                                        Intellicial AI) for
+                                        this
+                                        segment.</p>
+                                    <p>In the 9 years Abhishek has been with other MNCs, he catapulted every business he
+                                        led to
+                                        great levels
+                                        of success.</p>
+                                </div>
                             </div>
-                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
+    <div class="container">
+        <div class="row row-content">
+            <div class="col-12 col-sm-12">
+                <h2>Facts&amp; Figures</h2>
+                <div class="table-responsive">
+                    <table class="table table-striped">
+                        <thead class="thead-dark">
+                            <tr>
+                                <th>&nbsp;</th>
+                                <th>2022</th>
+                                <th>2021</th>
+                                <th>2020</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th>Employess</th>
+                                <td>15</td>
+                                <td>30</td>
+                                <td>40</td>
+                            </tr>
+                            <tr>
+                                <th>Projects Served</th>
+                                <td>150</td>
+                                <td>450</td>
+                                <td>900</td>
+                            </tr>
+                            <tr>
+                                <th>Special Events</th>
+                                <td>3</td>
+                                <td>20</td>
+                                <td>45</td>
+                            </tr>
+                            <tr>
+                                <th>Annual Turnover</th>
+                                <td>$251,325</td>
+                                <td>$1,250,375</td>
+                                <td>~$3,000,000</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+            
+        </div>
+    </div>
+    <div class="modal fade" id="reserveModal">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title"><strong>Reserve a Project</strong></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="row form-group row-header py-3">
+                            <label for="date" class="col-md-3 col-12 col-form-label">Number 0f Member</label>
+                            <div class="col-12 col-md-8">
+                                <label>
+                                    <input name="group3" type="radio" checked />
+                                    <span>1</span>
+                                </label>
+                                <label>
+                                    <input class="with-gap" name="group3" type="radio" checked />
+                                    <span>2</span>
+                                </label>
+                                <label>
+                                    <input class="with-gap" name="group3" type="radio" checked />
+                                    <span>3</span>
+                                </label>
+                                <label>
+                                    <input class="with-gap" name="group3" type="radio" checked />
+                                    <span>4</span>
+                                </label>
+                                <label>
+                                    <input class="with-gap" name="group3" type="radio" checkde />
+                                    <span>5</span>
+                                </label>
+                                <label>
+                                    <input class="with-gap" name="group3" type="radio" checked />
+                                    <span>6</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="row form-group row-header pb-3">
+                            <label for="section" class="col-md-3 col-12 col-form-label">Section</label>
+                            <div class="col-12 col-md-9">
+                                <div class="btn-group">
+                                    <input type="radio" class="btn-check" name="options-outlined" id="success-outlined"
+                                        autocomplete="off" checked>
+                                    <label class="btn btn-outline-success btn-sm"
+                                        for="success-outlined">Individual</label>
+                                    <input type="radio" class="btn-check" name="option-outlined" id="danger-outlined"
+                                        autocomplete="off">
+                                    <label class="btn btn-outline-danger btn-sm" for="danger-outlined">Team</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row form-group row-header pb-3">
+                            <label for="date" class="col-md-3 col-12 col-form-label">Date and Time</label>
+                            <div class="col-12 col-md-4">
+                                <input type="text" class="form-control" id="date" name="date" placeholder="Date">
+                            </div>
+                            <div class="col-12 col-md-3">
+                                <input type="text" class="form-control" id="Time" name="Time" placeholder="Time">
+                            </div>
+                        </div>
+                        <div class="form-goup row row-header pb-3">
+                            <div class="col-12 offset-md-3 col-md-9">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                                <button type="button" class="btn btn-primary">Reserve</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
         <div class="container">
-            <div class="row row-content">
-                <div class="col-12 col-sm-12">
-                    <h2>Facts&amp; Figures</h2>
-                    <div class="table-responsive">
-                        <table class="table table-striped">
-                            <thead class="thead-dark">
-                                <tr>
-                                    <th>&nbsp;</th>
-                                    <th>2022</th>
-                                    <th>2021</th>
-                                    <th>2020</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <th>Employess</th>
-                                    <td>15</td>
-                                    <td>30</td>
-                                    <td>40</td>
-                                </tr>
-                                <tr>
-                                    <th>Projects Served</th>
-                                    <td>150</td>
-                                    <td>450</td>
-                                    <td>900</td>
-                                </tr>
-                                <tr>
-                                    <th>Special Events</th>
-                                    <td>3</td>
-                                    <td>20</td>
-                                    <td>45</td>
-                                </tr>
-                                <tr>
-                                    <th>Annual Turnover</th>
-                                    <td>$251,325</td>
-                                    <td>$1,250,375</td>
-                                    <td>~$3,000,000</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-
+            <div class="row justify-content-center">
+                <div class="col-12 col-sm-4">
+                    <h5>Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./aboutus.html">About</a></li>
+                        <li><a href="#">Projects</a></li>
+                        <li><a href="./contactus.html">Contact</a></li>
+                    </ul>
                 </div>
-                <div class="row">
-                    <div class="col-12">
-                        <div class="card card-body bg-light">
-                            <blockquote class="blockquote">
-                                <p class="mb-2">A year spent in artificial intelligence is
-                                    enough to make one believe in God.</p>
-                                <footer class="blockquote-footer">
-                                    Aalok Kumar, <cite title="Source Title">Chief Executing
-                                        Officer, WHPL, India, 2022</cite>
-                                </footer>
-                            </blockquote>
-                        </div>
+                <div class="col-12 col-sm-4">
+                    <h5>Our Address</h5>
+                    <address>
+                        15 Bd Charles de Gaulle<br>
+                        92715 Colombes<br>
+                        France<br>
+                        <i class="fa fa-phone fa-lg"></i>: +33 1234 5678 20<br>
+                        <i class="fa fa-fax fa-lg"></i>: +33 8765 4321 20<br>
+                        <i class="fa fa-envelope fa-lg"></i>: <a
+                            href="mailto:info@intelicial.net">info@intelicial.net</a>
+                    </address>
+                </div>
+                <div class="col-12 col-sm-4 align-self-center">
+                    <div>
+                        <a class="btn btn-social-icon btn-google" href="http://google.com/+"><i
+                                class="fa fa-google-plus"></i></a>
+                        <a class="btn btn-social-icon btn-facebook" href="http://www.facebook.com/profile.php?id="><i
+                                class="fa fa-facebook"></i></a>
+                        <a class="btn btn-social-icon btn-linkedin" href="http://www.linkedin.com/in/"><i
+                                class="fa fa-linkedin"></i></a>
+                        <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i
+                                class="fa fa-twitter"></i></a>
+                        <a class="btn btn-social-icon btn-youtube" href="http://youtube.com/"><i
+                                class="fa fa-youtube"></i></a>
+                        <a class="btn btn-social-icon btn-mailto" href="mailto:"><i class="fa fa-mail-o"></i></a>
                     </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 text-center">
+                    <p>© Copyright 2023 | Intelicial AI (A project under WHPL)</p>
                 </div>
             </div>
         </div>
-
-        <footer class="footer">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12 col-sm-4">
-                        <h5>Links</h5>
-                        <ul class="list-unstyled">
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">About</a></li>
-                            <li><a href="#">Projects</a></li>
-                            <li><a href="#">Contact</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-12 col-sm-4">
-                        <h5>Our Address</h5>
-                        <address>
-                            15 Bd Charles de Gaulle<br>
-                            92715 Colombes<br>
-                            France<br>
-                            <i class="fa fa-phone fa-lg"></i>: +33 1234 5678 20<br>
-                            <i class="fa fa-fax fa-lg"></i>: +33 8765 4321 20<br>
-                            <i class="fa fa-envelope fa-lg"></i>: <a
-                                href="mailto:info@intelicial.net">info@intelicial.net</a>
-                        </address>
-                    </div>
-                    <div class="col-12 col-sm-4 align-self-center">
-                        <div class="text-center">
-                            <a class="btn btn-social-icon btn-google" href="http://google.com/+"><i
-                                    class="fa fa-google-plus"></i></a>
-                            <a class="btn btn-social-icon btn-facebook"
-                                href="http://www.facebook.com/profile.php?id="><i class="fa fa-facebook"></i></a>
-                            <a class="btn btn-social-icon btn-linkedin" href="http://www.linkedin.com/in/"><i
-                                    class="fa fa-linkedin"></i></a>
-                            <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i
-                                    class="fa fa-twitter"></i></a>
-                            <a class="btn btn-social-icon btn-youtube" href="http://youtube.com/"><i
-                                    class="fa fa-youtube"></i></a>
-                            <a class="btn btn-social-icon btn-mailto" href="mailto:"><i
-                                    class="fa fa-envelope-o"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="row justify-content-center space">
-                    <div class="col-auto">
-                        <p>© Copyright 2023 | Intelicial AI (A project under WHPL)</p>
-                    </div>
-                </div>
-            </div>
-        </footer>
-        <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
-        <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
-        <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    </footer>
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 
 
 </body>

@@ -24,7 +24,7 @@
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#Navbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <a class="navbar-brand mr-auto" href="#"><img src="img/logo.png" width="45px" alt="logo"/></a>
+            <a class="navbar-brand mr-auto" href="#"><img src="img/logo.png" width="45px" alt="logo" /></a>
             <div class="collapse navbar-collapse" id="Navbar">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item active"><a class="nav-link" href="./index.html"><span
@@ -36,9 +36,52 @@
                     <li class="nav-item"><a class="nav-link" href="#"><span
                                 class="fa fa-address-card fa-lg"></span>Contact</a></li>
                 </ul>
+                <span class="navbar-text">
+                    <a data-bs-toggle="modal" data-bs-target="#loginModal"><span class="fa fa-sign-in"></span>Login</a>
+                </span>
             </div>
         </div>
     </nav>
+    <div id="loginModal" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-lg" role="content">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Login</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-row">
+                            <div class="row">
+                                <div class="col">
+                                    <label class="sr-only" for="inputemail">Email address</label>
+                                    <input type="email" class="form-control 
+                                    form-control-sm mr-1" id="Email Address" placeholder="Enter email">
+                                </div>
+                                <div class="col">
+                                    <label class="sr-only" for="inputpass">Password</label>
+                                    <input type="password" class="form-control 
+                                    form-control-sm mr-1" id="Password" placeholder=" Enter Password">
+                                </div>
+                            </div>
+                            <div class="col-sm-auto">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox">
+                                    <label class="form-check-label">Remember me</label>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="form-row">
+                            <button type="button" class="btn btn-secondary btn-sm ml-auto"
+                                data-bs-dismiss="modal">Cancel</button>
+                            <button type="submit" class="btn btn-primary btn-sm ml-1">Sign in</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
     <header class="jumbotron">
         <div class="container">
             <div class="row row-header">
@@ -48,10 +91,17 @@
                         and benefits, as well as careful consideration of the impact.</p>
                 </div>
                 <div class="col-12 col-sm align-self-center">
-                    <img src="img/logo.png" width="120px" alt="logo"/>
+                    <img src="img/logo.png" width="120px" alt="logo" />
+                </div>
+                <div class="col-12 col-sm-3 align-self-center p-3">
+                    <div class="d-grid gap-2">
+
+                        <a role="button" class="btn btn-sm btn-warning" type="button" data-bs-toggle="modal"
+                            data-bs-target="#reserveModal">Reserve a Project</a>
+
+                    </div>
                 </div>
             </div>
-        </div>
     </header>
 
 
@@ -90,8 +140,8 @@
                 <div class="btn-group" role="group">
                     <a role="button" class="btn btn-primary" href="tel:+33123456780"><i class="fa fa-phone">Call</i></a>
                     <a role="button" class="btn btn-info"><i class="fa fa-skype">skype</i></a>
-                    <a class="button" class="btn btn-success" href="mailto:info@intelicial.net"><i
-                            class="fa fa-envelope-o">Email</i></a>
+                    <a role="button" class="btn btn-success" href="mailto:info@intelicial.net"><i
+                            class="fa fa-envelope">Email</i></a>
 
                 </div>
             </div>
@@ -111,7 +161,7 @@
                     </div>
                     <div class="form-group row">
                         <label for="lastname" class="col-md-2 col-form-label">Last Name</label>
-                        <div class="col-md-10">
+                        <div class="col-md-10 p-2">
                             <input type="text" class="form-control" id="lastname" name="lastname"
                                 placeholder="Last Name">
                         </div>
@@ -129,7 +179,7 @@
                 </div>
                 <div class="form-group row">
                     <label for="emailid" class="col-md-2 col-form-label">Email</label>
-                    <div class="col-md-10">
+                    <div class="col-md-10 p-2">
                         <input type="email" class="form-control" id="emailid" name="emailid" placeholder="Email">
                     </div>
                 </div>
@@ -153,7 +203,7 @@
             <div class="form-group row">
                 <label for="feedback" class="col-md-2 col-form-label">Your
                     Feedback</label>
-                <div class="col-md-10">
+                <div class="col-md-10 p-2">
                     <textarea class="form-control" id="feedback" name="feedback" rows="12"></textarea>
                 </div>
             </div>
@@ -167,7 +217,78 @@
             <div class="col-12 col-md">
             </div>
         </div>
-
+    </div>
+    <div class="modal fade" id="reserveModal">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title"><strong>Reserve a Project</strong></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="row form-group row-header py-3">
+                            <label for="date" class="col-md-3 col-12 col-form-label">Number 0f Member</label>
+                            <div class="col-12 col-md-8">
+                                <label>
+                                    <input name="group3" type="radio" checked />
+                                    <span>1</span>
+                                </label>
+                                <label>
+                                    <input class="with-gap" name="group3" type="radio" checked />
+                                    <span>2</span>
+                                </label>
+                                <label>
+                                    <input class="with-gap" name="group3" type="radio" checked />
+                                    <span>3</span>
+                                </label>
+                                <label>
+                                    <input class="with-gap" name="group3" type="radio" checked />
+                                    <span>4</span>
+                                </label>
+                                <label>
+                                    <input class="with-gap" name="group3" type="radio" checkde />
+                                    <span>5</span>
+                                </label>
+                                <label>
+                                    <input class="with-gap" name="group3" type="radio" checked />
+                                    <span>6</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="row form-group row-header pb-3">
+                            <label for="section" class="col-md-3 col-12 col-form-label">Section</label>
+                            <div class="col-12 col-md-9">
+                                <div class="btn-group">
+                                    <input type="radio" class="btn-check" name="options-outlined" id="success-outlined"
+                                        autocomplete="off" checked>
+                                    <label class="btn btn-outline-success btn-sm"
+                                        for="success-outlined">Individual</label>
+                                    <input type="radio" class="btn-check" name="option-outlined" id="danger-outlined"
+                                        autocomplete="off">
+                                    <label class="btn btn-outline-danger btn-sm" for="danger-outlined">Team</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row form-group row-header pb-3">
+                            <label for="date" class="col-md-3 col-12 col-form-label">Date and Time</label>
+                            <div class="col-12 col-md-4">
+                                <input type="text" class="form-control" id="date" name="date" placeholder="Date">
+                            </div>
+                            <div class="col-12 col-md-3">
+                                <input type="text" class="form-control" id="Time" name="Time" placeholder="Time">
+                            </div>
+                        </div>
+                        <div class="form-goup row row-header pb-3">
+                            <div class="col-12 offset-md-3 col-md-9">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                                <button type="button" class="btn btn-primary">Reserve</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
     </div>
 
     <footer class="footer">
